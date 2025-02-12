@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Valentine's Day Special</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+        
+        body {
+            background-color: #ff4d4d;
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            position: relative;
+            direction: rtl;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-top: 20px;
+        }
+        
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            max-width: 100%;
+        }
+        .image-container div {
+            text-align: center;
+        }
+        .image-container img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            border: 2px solid white;
+        }
+        .image-caption {
+            font-size: 1.2em;
+            font-family: 'Dancing Script', cursive;
+            margin-top: 5px;
+        }
+        
+        .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            flex-wrap: wrap;
+            max-width: 100%;
+        }
+        .video-container video {
+            width: 90%;
+            max-width: 320px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        
+        @media (max-width: 600px) {
+            .image-container img {
+                width: 100px;
+                height: 100px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        /* قلوب ونجوم متحركة */
+        .glowing-hearts, .twinkling-stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+        .heart, .star {
+            position: absolute;
+            font-size: 20px;
+            animation: fall linear infinite, glow 1s infinite alternate;
+            opacity: 0.8;
+        }
+        .heart {
+            color: pink;
+        }
+        .star {
+            color: yellow;
+        }
+        
+        @keyframes fall {
+            0% { transform: translateY(0px) scale(1); opacity: 1; }
+            100% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+        }
+        @keyframes glow {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="glowing-hearts"></div>
+    <div class="twinkling-stars"></div>
+    <h1>❤️Happy Valentine's Day❤️</h1>
+    
+    
+    <!-- تشغيل موسيقى رومانسية عند فتح الموقع -->
+    <audio controls loop>
+        <source src="1.mp3" type="audio/mpeg">
+    </audio>
+    
+     <!-- قسم الصور مع تعليقات نصية بالعربية -->
+     <div class="image-container">
+        <div><img src="1.jpg" alt="حب"><p class="image-caption">البسبوساية بتاعتيي ❤️</p></div>
+        <div><img src="2.jpg" alt="سعادة"><p class="image-caption">بنتي 💕</p></div>
+        <div><img src="3.jpg" alt="ذكريات"><p class="image-caption">حبيبه قلبي 💖</p></div>
+        <div><img src="4.jpg" alt="لحظات"><p class="image-caption">اول خروجة ✨</p></div>
+        <div><img src="5.jpg" alt="سعادة"><p class="image-caption">يخلاصي ع الخدود يناس 💓</p></div>
+        <div><img src="6.jpg" alt="رابط"><p class="image-caption">خدتها برضو  💞</p></div>
+        <div><img src="7.jpg" alt="قلب"><p class="image-caption">مكنتيش حاسه باللي جوايا بس فداكي 💗</p></div>
+        <div><img src="8.jpg" alt="خلود"><p class="image-caption">العشق  💘</p></div>
+        <div><img src="9.jpg" alt="أحلام"><p class="image-caption">احلا بنوتة في حياتي 💖</p></div>
+        <div><img src="10.jpg" alt="قصة"><p class="image-caption">اموات انا في المهلبيه 💞</p></div>
+        <div><img src="11.jpg" alt="حب"><p class="image-caption">بحبك يا اعظم انتصاراتي ❤️</p></div>
+        <div><img src="12.jpg" alt="سعادة"><p class="image-caption">قلبي اللي عايش بيه 💕</p></div>
+        <div><img src="13.jpg" alt="ذكريات"><p class="image-caption">بحبك يعمري انا 💖</p></div>
+        <div><img src="14.jpg" alt="لحظات"><p class="image-caption">بحبك يا يحببتي ✨</p></div>
+        <div><img src="15.jpg" alt="سعادة"><p class="image-caption">اجمل لحظه 💓</p></div>
+        <div><img src="16.jpg" alt="رابط"><p class="image-caption">بصحتك يقلبي 💞</p></div>
+        <div><img src="17.jpg" alt="قلب"><p class="image-caption">بحبك يمراتي 💗</p></div>
+        <div><img src="18.jpg" alt="خلود"><p class="image-caption">بعشقك يبتتتتت 💘</p></div>
+        <div><img src="19.jpg" alt="أحلام"><p class="image-caption">اعععع بحببببكك 💖</p></div>
+        <div><img src="20.jpg" alt="قصة"><p class="image-caption">عايز اتجوزك واخلص 💞</p></div>
+        <div><img src="21.jpg" alt="رابط"><p class="image-caption">احلا تغفيله 💞</p></div>
+        <div><img src="22.jpg" alt="قلب"><p class="image-caption">قلبي من جواا 💗</p></div>
+        <div><img src="23.jpg" alt="خلود"><p class="image-caption">مزتي 💘</p></div>
+        <div><img src="24.jpg" alt="أحلام"><p class="image-caption">دلوعتي يناس 💖</p></div>
+        <div><img src="25.jpg" alt="قصة"><p class="image-caption">احلي بطايه 💞</p></div>
+    </div>
+
+    
+    <!-- قسم الفيديوهات بجانب بعضها -->
+    <div class="video-container">
+        <video controls muted><source src="1.mp4" type="video/mp4"></video>
+        <video controls muted><source src="2.mp4" type="video/mp4"></video>
+        <video controls muted><source src="3.mp4" type="video/mp4"></video>
+    </div>
+
+    <script>
+        function createElement(type, className, symbol) {
+            const element = document.createElement('div');
+            element.classList.add(className);
+            element.innerHTML = symbol;
+            element.style.left = Math.random() * 100 + 'vw';
+            element.style.animationDuration = (Math.random() * 2 + 3) + 's';
+            element.style.fontSize = (Math.random() * 20 + 10) + 'px';
+            document.querySelector(className === 'heart' ? '.glowing-hearts' : '.twinkling-stars').appendChild(element);
+            setTimeout(() => element.remove(), 5000);
+        }
+        
+        setInterval(() => createElement('div', 'heart', '❤️'), 300);
+        setInterval(() => createElement('div', 'star', '✨'), 500);
+    </script>
+
+    <h3>كل سنه وانتي
+         طيبه يحببتي 🥺♥كل سنه وانتي طيبه يبنتي ومراتي ونور عيني
+         🥰🫀كل سنه وانتي معايا يروحقلبي من جوا👀💖 كل سنه وانتي
+         في حياتي بنكدك وهبلك وبعنادك 🌚♥كل سنه وانتي امي وحبيتي
+         وعمري كلو 🌝💝بحبك يمرمورتي يا احلا حاجه حصلتلي في حياتي
+         🥺💗البنوته الوحيده اللي فقلبي 🥺♥دلوعتي وحبيتي وحياتي 
+        ونفسي اللي بتنفسو🙈♥ بحبك يا احلا بنوته شافتها عيوني👀♥ ي
+        ا أجمل بنوته كدا كدا بحبك يا أطيب واحنّ مراميرو في الدنيا🌝❤‍🔥
+         بحبك يست الكل بحبك يا ام مارك وتاليا ومولود آخر 👶🏻♥بحبك
+         يمراتي يضهري وسندي في الدنيا ♥✨بحبك يتاج راسي 🥹💓انتي ا
+        لشخص الوحيد اللي لما بشوفك برتاح نفسيا ومش بمل أنا ومعاك
+        ي انتي سر ضحكتي وسعادتي ربنا يخليكي ليا يبنتي يا احلا حاج
+        ه في حياتي 😍😘أنا بعشقك يحببتي وادمنتك وحبيتك حب لا يوصف 
+        👈🏻👉🏻بعشقككك يميروووووووو عااااا 🥺♥بحبك يبطتي انتي عملتي
+        لي اي يبت برتاحلك وبحب القعده معاكي ومش بمل منك بحب اقضي 
+        وقتي كله معاكي ولا ازهق منك🌝✨ أنا بحبك اوي يميرو أنا اب
+        نك اللي اول ما يشوف أمه بيحس بشعور مختلف ويحس نفسه انه ف
+        ي أمان أنا لما بكون معاكي بحس اني مالك الدنيا واللي فيها 💘
+        ✨كل سنه وانتي طيبه وهابي فلانتين دي💞👀 انه عيد الحب ال
+        تالت لينا 🙈✨وانشاءالله نحتفل دايما العمر كله يحته سكر
+        ايه بعيد الحب 😍😘وهانت ونحتفل كل الأعياد في بيتنا انشال
+        له 🥹😍وتنوري حياتي دايما بوجودك ونجيب احلا أطفال في الدنيا 👩‍❤️‍👩❤‍🔥
+        وتكون حياتنا كلها دلع وفرح 🥺♥بحبك يمراتي بحبك بحبك بحبك ♥♥</h3>
+
+</body>
+</html>
